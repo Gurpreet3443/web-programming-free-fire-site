@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire Esports</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Basic Styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-color: #1c1f2b;
+        }
+
+        /* Header */
+        h1 {
+            text-align: center;
+            color: #FFD700;
+            font-size: 3em;
+            margin-top: 50px;
+            font-weight: bold;
+        }
+
+        /* Tournament Card */
+        .tournament-card {
+            background-color: #222;
+            border: none;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .tournament-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-body h5 {
+            color: #FFD700;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        .card-body p {
+            color: #ddd;
+        }
+        .btn-explore {
+            background-color: #FFD700;
+            border-color: #FFD700;
+            color: #333;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+        .btn-explore:hover {
+            background-color: #e5c100;
+            border-color: #e5c100;
+        }
+
+        /* Team Section */
+        .team-section {
+            margin-top: 50px;
+        }
+        .team-card {
+            background-color: #333;
+            border: none;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+        }
+        .team-card img {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Page Header -->
+<h1>Free Fire Esports</h1>
+
+<!-- Tournaments Section -->
+<div class="container my-5">
+    <h2 class="text-center mb-4" style="color: #FFD700;">Upcoming Tournaments</h2>
+    <div class="row">
+        <!-- Tournament Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card tournament-card">
+                <img src="C:\Users\Dell\Desktop\th.jpeg" class="card-img-top" alt="Tournament 1">
+                <div class="card-body">
+                    <h5 class="card-title">Free Fire World Series 2024</h5>
+                    <p class="card-text">Join the biggest Free Fire tournament featuring teams from around the globe!</p>
+                    <a href="world-series.html" class="btn btn-explore">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tournament Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card tournament-card">
+                <img src="C:\Users\Dell\Desktop\OIP (2).jpeg" alt="Tournament 2">
+                <div class="card-body">
+                    <h5 class="card-title">Garena Free Fire League 2024</h5>
+                    <p class="card-text">The annual league where the best teams compete for glory and prizes!</p>
+                    <a href="garena-league.html" class="btn btn-explore">Learn More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tournament Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card tournament-card">
+                <img src="C:\Users\Dell\Desktop\OIP (3).jpeg" class="card-img-top" alt="Tournament 3">
+                <div class="card-body">
+                    <h5 class="card-title">FF Championship 2024</h5>
+                    <p class="card-text">Witness the top teams battle it out for the ultimate championship title!</p>
+                    <a href="ff-championship.html" class="btn btn-explore">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Teams Section -->
+<div class="container team-section">
+    <h2 class="text-center mb-4" style="color: #FFD700;">Featured Teams</h2>
+    <div class="row">
+        <!-- Team Card 1 -->
+        <div class="col-md-4 mb-4">
+            <div class="card team-card">
+                <img src="C:\Users\Dell\Desktop\OIP (4).jpeg" class="card-img-top" alt="Team 1">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Team Elite</h5>
+                    <p class="card-text">A powerhouse in the Free Fire esports scene with multiple championship titles.</p>
+                    <a href="https://www.teamelite.com" class="btn btn-explore" target="_blank">Visit Team Page</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Card 2 -->
+        <div class="col-md-4 mb-4">
+            <div class="card team-card">
+                <img src="C:\Users\Dell\Desktop\OIP (5).jpeg" class="card-img-top" alt="Team 2">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Legends Never Die</h5>
+                    <p class="card-text">Known for their strategic gameplay and incredible teamwork.</p>
+                    <a href="https://www.lndteam.com" class="btn btn-explore" target="_blank">Visit Team Page</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Team Card 3 -->
+        <div class="col-md-4 mb-4">
+            <div class="card team-card">
+                <img src="C:\Users\Dell\Desktop\OIP (7).jpeg" class="card-img-top" alt="Team 3">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Shadow Squad</h5>
+                    <p class="card-text">A rising star in the esports world with a dedicated fan base.</p>
+                    <a href="https://www.shadowsquad.com" class="btn btn-explore" target="_blank">Visit Team Page</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Free Fire World. All rights reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

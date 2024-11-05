@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Fire Game Info</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            color: #fff;
+            background-color: #1c1f2b;
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #333;
+        }
+        .navbar-brand, .nav-link {
+            color: #fff !important;
+        }
+        .navbar-brand:hover, .nav-link:hover {
+            color: #FFD700 !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('images/hero-bg.jpg') no-repeat center center/cover;
+            color: #fff;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 3em;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.2em;
+            margin-top: 10px;
+        }
+        .btn-primary {
+            background-color: #FFD700;
+            border-color: #FFD700;
+            font-weight: bold;
+        }
+        .btn-primary:hover {
+            background-color: #e5c100;
+            border-color: #e5c100;
+        }
+
+        /* Section Cards */
+        .section-card {
+            background-color: #222;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s;
+        }
+        .section-card:hover {
+            transform: scale(1.05);
+        }
+        .section-card img {
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px 10px 0 0;
+        }
+        .card-body h5 {
+            font-weight: bold;
+            color: #FFD700;
+        }
+        .card-body p {
+            color: #ddd;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><a href="guns.html">Guns</a></li>
+        <li><a href="characters.html">Characters</a></li>
+        <li><a href="maps.html">Maps</a></li>
+        <li><a href="esports.html">Esports</a></li>
+    </ul>
+</nav>
+
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="index.html">Free Fire World</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="characters.html">Characters</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="guns.html">Guns</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="maps.html">Maps</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+    <h1>Welcome to Free Fire World</h1>
+    <p>Your ultimate guide to all the characters, guns, and maps in Free Fire!</p>
+    <a href="characters.html" class="btn btn-primary btn-lg mt-3">Explore Characters</a>
+</div>
+<!-- Search Section -->
+<div class="container my-5">
+    <h1 class="text-center my-4">Search Free Fire Details</h1>
+<!-- Dropdown and Input for Search -->
+    <div class="search-box d-flex justify-content-center">
+        <select id="categorySelect" class="form-control w-25">
+            <option value="all">All Categories</option>
+            <option value="character">Characters</option>
+            <option value="gun">Guns</option>
+            <option value="map">Maps</option>
+        </select>
+        <input type="text" id="searchInput" class="form-control w-50 ml-2" placeholder="Enter a gun, map, or character name..." oninput="filterData()">
+    </div>
+
+    <div id="results" class="results-container my-4">
+        <!-- Results will appear here -->
+    </div>
+</div>
+
+<!-- Content Sections -->
+<div class="container my-5">
+    <div class="row">
+        <!-- Characters Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card section-card">
+                <img src="C:\Users\Dell\Desktop\OIP (1).jpeg" class="card-img-top" alt="Characters">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Characters</h5>
+                    <p class="card-text">Meet all the unique Free Fire characters with special abilities!</p>
+                    <a href="characters.html" class="btn btn-primary">View Characters</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Guns Card -->
+        <div class="col-md-4 mb-4">
+            <div class="card section-card">
+                <img src="C:\Users\Dell\Desktop\OIP.jpeg" class="card-img-top" alt="Guns">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Guns</h5>
+                    <p class="card-text">Discover the best weapons for battle, from SMGs to sniper rifles!</p>
+                    <a href="guns.html" class="btn btn-primary">View Guns</a>
+                </div>
+            </div>
+        </div>
+
+         <!-- Maps Card -->
+        <div class="col-md-3 mb-4">
+            <div class="card section-card">
+                <img src="C:\Users\Dell\Desktop\download (2).jpeg" class="card-img-top" alt="Maps">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Maps</h5>
+                    <p class="card-text">Explore all the game maps: Bermuda, Kalahari, Purgatory, and more!</p>
+                    <a href="maps.html" class="btn btn-primary">View Maps</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Esports Card -->
+        <div class="col-md-3 mb-4">
+            <div class="card section-card">
+                <img src="C:\Users\Dell\Desktop\download (4).jpeg" class="card-img-top" alt="Esports">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Esports</h5>
+                    <p class="card-text">Catch up on the latest Free Fire esports tournaments and leagues!</p>
+                    <a href="esports.html" class="btn btn-primary">View Esports</a>
+                </div>
+            </div>
+        </div>
+   </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Free Fire World. All rights reserved.</p>
+</footer> 2024 Free Fire World. All rights reserved.</p>
+</footer>
+<script src="data.js"></script>
+<script src="search.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

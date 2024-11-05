@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+.map-img {
+    width: 100%;
+    max-width: 250px;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.map-section img {
+    border-radius: 8px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+/* styles/style.css */
+
+.result-item {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.result-item h3 {
+    color: #FFD700;
+}
